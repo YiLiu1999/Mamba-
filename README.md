@@ -84,3 +84,8 @@ $$
 \bar{B} &= \Delta B\frac{(e^{A\Delta}-I)}{A\Delta}
 \end{align}
 $$
+
+
+$$
+=e^{AT}x(t_k)-\frac{1}{A}e^{-A\tau}\mid _{t_k}^{t_{k+1}}e^{At_{k+1}}Bu(t_k)
+$$
