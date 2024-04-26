@@ -1,4 +1,4 @@
-# Mamba公式推导
+# Derivation of the Mamba formula
 
 $$
 h'(t)=Ah(t)+Bx(t)
