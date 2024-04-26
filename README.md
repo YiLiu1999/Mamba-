@@ -51,6 +51,7 @@ $$
 
 有
 
+$$
 \begin{align}
 x(t_{k+1})&=e^A[t_k+(t_{k+1}-t_k)]x(0)+e^A[t_k+(t_{k+1}-t_k)]\int_{0}^{t_k+(t_{k+1}-t_k)}e^{-A\tau}Bu(\tau)d\tau \\
 
@@ -65,7 +66,7 @@ x(t_{k+1})&=e^A[t_k+(t_{k+1}-t_k)]x(0)+e^A[t_k+(t_{k+1}-t_k)]\int_{0}^{t_k+(t_{k
 
 &=e^{A(t_{k+1}-t_k)}x(t_k)+\int_{t_k}^{t_{k+1}}e^{A(t_{k+1}-\tau)}Bu(\tau)d\tau\\
 \end{align}
-
+$$
 
 令 $T=t_{k+1}-t_k, T \rightarrow0$
 
