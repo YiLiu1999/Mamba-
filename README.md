@@ -50,6 +50,6 @@ $$
 所以在 $t_{k+1},t_k$ 时：
 
 $$
-x(t_{k+1})=e^{At_{k+1}x(0)+e^{At_{k+1}\int_0^{t_{k+1}}e^{-A\tau}Bu(\tau)d\tau
+x(t_{k+1})=e^{At_{k+1}}x(0)+e^{At_{k+1}}\int_0^{t_{k+1}}e^{-A\tau}Bu(\tau)d\tau
 
 $$
