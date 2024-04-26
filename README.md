@@ -48,6 +48,7 @@ x(t)=e^{At}x(0)+e^{At}\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau
 $$
 
 所以在 $t_{k+1},t_k$ 时：
+
 $$
 x(t_{k+1})=e^{At_{k+1}}x(0)+e^{At_{k+1}}\int_{0}^{t_{k+1}}e^{-A\tau}Bu(\tau)d\tau
 $$
