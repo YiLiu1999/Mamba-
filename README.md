@@ -24,23 +24,18 @@ $$
 e^{-At}x'(t)-e^{-At}x(t)=e^{-At}Bu(t)
 $$
 
-令： $F(t)=e^{-At}x(t)$ ，求导后得： $F'(t)=-Ae^{-At}x(t)+e^{-At}x'(t)\\=e^{-At}Bu(t)$
+令： $F(t)=e^{-At}x(t)$ ，求导后得： $F'(t)=-Ae^{-At}x(t)+e^{-At}x'(t)=e^{-At}Bu(t)$
 
 最终希望得到： $x(t_{k+1})=Sx(t_k)$ （未来的是基于现有推到得到的）
 
-希望最终的式子仅包含 $x(t),u(t)$
-
-根据微积分定义可知： $F(t)=F(\lambda)+\int_{\lambda }^{t} F'(\tau )d \tau, \lambda \in (-\infty, +\infty)$
+希望最终的式子仅包含 $x(t),u(t)$ , 根据微积分定义可知： $F(t)=F(\lambda)+\int_{\lambda }^{t} F'(\tau )d \tau, \lambda \in (-\infty, +\infty)$
 
 假设 $\lambda=0$
 
 $$
-e^{-At}x(t)&=x(0)+\int_{0}^{t} e^{-At}Bu(\tau)d\tau \\
+e^{-At}x(t)=x(0)+\int_{0}^{t} e^{-At}Bu(\tau)d\tau \\
 
-\downarrow 对其进行离散化 \\
-
-x(t)&=e^{At}x(0)+e^{At}\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau
-
+x(t)=e^{At}x(0)+e^{At}\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau
 $$
 
 所以在 $t_{k+1},t_k$ 时：
