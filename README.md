@@ -34,9 +34,9 @@ $$
 
 $$
 \begin{align}
-e^{-At}x(t)=x(0)+\int_{0}&^{t} e^{-At}Bu(\tau)d\tau \\
+e^{-At}x(t)=x(0)+&\int_{0}^{t} e^{-At}Bu(\tau)d\tau \\
  \downarrow 对&其进行离散化\\
-x(t)=e^{At}x(0)+e^{At}\int_{0&}^{t}e^{-A\tau}Bu(\tau)d\tau
+x(t)=e^{At}x(0)+&e^{At}\int_{0}^{t}e^{-A\tau}Bu(\tau)d\tau
 \end{align}
 $$
 
