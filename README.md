@@ -65,7 +65,8 @@ $$
 
 $$
 \begin{align}
-x(t_{k+1})&=e^{AT}x(t_k)+\int_{t_k}^{t_{k+1}}e^{A(t_{k+1}-\tau)}Bu(\tau)d\tau
+x(t_{k+1})&=e^{AT}x(t_k)+\int_{t_k}^{t_{k+1}}e^{A(t_{k+1}-\tau)}Bu(\tau)d\tau \\
+&=e^{AT}x(t_k)+\int_{t_k}^{t_{k+1}}e^{A(t_{k+1}-\tau)}d(\tau)Bu(t_k) \\
 \end{align}
 $$
 
