@@ -78,6 +78,7 @@ x(t_{k+1})&=e^{AT}x(t_k)+\int_{t_k}^{t_{k+1}}e^{A(t_{k+1}-\tau)}Bu(\tau)d\tau \\
 $$
 
 因此可令：
+
 $$
 \begin{align}
 \bar{A} &= e^{A \Delta} \\
