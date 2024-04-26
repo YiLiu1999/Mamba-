@@ -61,11 +61,19 @@ x(t_{k+1})&=e^A[t_k+(t_{k+1}-t_k)]x(0)+e^A[t_k+(t_{k+1}-t_k)]\int_{0}^{t_k+(t_{k
 \end{align}
 $$
 
-令 $T=t_{k+1}-t_k, T \rightarrow0$
+令 $T=t_{k+1}-t_k, T \rightarrow0 $ 
 
 $$
 \begin{align}
-
+x(t_{k+1})&=e^{AT}x(t_k)+\int_{t_k}^{t_{k+1}}e^{A(t_{k+1}-\tau)}Bu(\tau)d\tau \\
+&=e^{AT}x(t_k)+\int_{t_k}^{t_{k+1}}e^{A(t_{k+1}-\tau)}d(\tau)Bu(t_k) \\
+&=e^{AT}x(t_k)-\frac{1}{A}e^{-A\tau}|_{t_k}^{t_{k+1}}e^{At_{k+1}}Bu(t_k) \\
+&=e^{AT}x(t_k)-\frac{1}{A}(e^{-At_{k+1}}-e^{-At_{k}})e^{At_{k+1}}Bu(t_k) \\
+&=e^{AT}x(t_k)+\frac{1}{A}(e^{A(t_{k+1}-t_{k})}-1)Bu(t_k) \\
+&=e^{AT}x(t_k)+\frac{1}{A}(e^{AT}-1)Bu(t_k) \\
+&=e^{AT}x(t_k)+B\frac{(e^{AT}-I)}{A}u(t_k) \\
+视T为 \Delta \\
+&=e^{A\Delta}x(t_k)+\Delta B\frac{(e^{AT}-I)}{A\Delta}u(t_k) \\
 \end{align}
 $$
 
