@@ -80,6 +80,6 @@ $$
 因此可令：
 
 $$
-\bar{A}=e^{A \Delta} \\
-\bar{B}=\Delta B\frac{(e^{AT}-I)}{A\Delta}
+\bar{A}&=e^{A \Delta} \\
+\bar{B}&=\Delta B\frac{(e^{AT}-I)}{A\Delta}
 $$
