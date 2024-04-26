@@ -54,16 +54,9 @@ $$
 $$
 \begin{align}
 x(t_{k+1})&=e^A[t_k+(t_{k+1}-t_k)]x(0)+e^A[t_k+(t_{k+1}-t_k)]\int_{0}^{t_k+(t_{k+1}-t_k)}e^{-A\tau}Bu(\tau)d\tau \\
-
-&={e^{At_k}*e^{A(t_{k+1}-t_k)}}x(0)
-+e^{At_k}\int_{0}^{t_{k+1}}e^{-A\tau}Bu(\tau)d\tau
-+e^{A(t_{k+1}-t_k)}\int_{0}^{t_{k+1}}e^{-A\tau}Bu(\tau)d\tau \\
-
-&=e^{A(t_{k+1}-t_k)}[e^{At_k}x(0)+e^{At_k}\int_0^{t_k}e^{-A\tau}Bu(\tau)d\tau]
-+e^{At_{k+1}}\int_{t_k}^{t_{k+1}}e^{-\tau}Bu(\tau)d\tau\\
-
+&={e^{At_k}*e^{A(t_{k+1}-t_k)}}x(0)+e^{At_k}\int_{0}^{t_{k+1}}e^{-A\tau}Bu(\tau)d\tau+e^{A(t_{k+1}-t_k)}\int_{0}^{t_{k+1}}e^{-A\tau}Bu(\tau)d\tau \\
+&=e^{A(t_{k+1}-t_k)}[e^{At_k}x(0)+e^{At_k}\int_0^{t_k}e^{-A\tau}Bu(\tau)d\tau]+e^{At_{k+1}}\int_{t_k}^{t_{k+1}}e^{-\tau}Bu(\tau)d\tau\\
 &=e^{A(t_{k+1}-t_k)}x(t_k)+e^{At_{k+1}}\int_{t_k}^{t_{k+1}}e^{-A\tau}Bu(\tau)d\tau\\
-
 &=e^{A(t_{k+1}-t_k)}x(t_k)+\int_{t_k}^{t_{k+1}}e^{A(t_{k+1}-\tau)}Bu(\tau)d\tau\\
 \end{align}
 $$
